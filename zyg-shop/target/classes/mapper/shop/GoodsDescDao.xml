@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zyg.shop.dao.GoodsDescDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.zyg.shop.entity.GoodsDescEntity" id="goodsDescMap">
+        <result property="goodsId" column="goods_id"/>
+        <result property="introduction" column="introduction"/>
+        <result property="specificationItems" column="specification_items"/>
+        <result property="customAttributeItems" column="custom_attribute_items"/>
+        <result property="itemImages" column="item_images"/>
+        <result property="packageList" column="package_list"/>
+        <result property="saleService" column="sale_service"/>
+    </resultMap>
+
+
+</mapper>

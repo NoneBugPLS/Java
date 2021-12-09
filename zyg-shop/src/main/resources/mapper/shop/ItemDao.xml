@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zyg.shop.dao.ItemDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.zyg.shop.entity.ItemEntity" id="itemMap">
+        <result property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="sellPoint" column="sell_point"/>
+        <result property="price" column="price"/>
+        <result property="stockCount" column="stock_count"/>
+        <result property="num" column="num"/>
+        <result property="barcode" column="barcode"/>
+        <result property="image" column="image"/>
+        <result property="categoryid" column="categoryId"/>
+        <result property="status" column="status"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="itemSn" column="item_sn"/>
+        <result property="costPirce" column="cost_pirce"/>
+        <result property="marketPrice" column="market_price"/>
+        <result property="isDefault" column="is_default"/>
+        <result property="goodsId" column="goods_id"/>
+        <result property="sellerId" column="seller_id"/>
+        <result property="cartThumbnail" column="cart_thumbnail"/>
+        <result property="category" column="category"/>
+        <result property="brand" column="brand"/>
+        <result property="spec" column="spec"/>
+        <result property="seller" column="seller"/>
+    </resultMap>
+
+
+</mapper>
